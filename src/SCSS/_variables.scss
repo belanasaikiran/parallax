@@ -1,0 +1,108 @@
+// Language: scss
+// Path: src/SCSS/_variables.scss
+
+
+
+// colors
+$primary: #d49100;
+
+
+$secondary: #ff9800;
+
+
+$success: #4caf50;
+
+
+$info: #2196f3;
+
+
+$warning: #ffc107;
+
+
+$danger: #f44336;
+
+
+$light: #f1f1f1;
+
+
+$dark: #212832;
+
+
+$white: #EDEDED;
+
+
+$black: #000;
+
+
+$transparent: transparent;
+
+
+$current: currentColor;
+
+
+// font-family
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+
+$font-family-serif: 'Roboto Slab', serif;
+
+
+$font-family-monospace: 'Roboto Mono', monospace;
+
+
+// font-size
+$font-size-base: 14px;
+
+
+$font-size-h1: 32px;
+
+
+$font-size-h2: 28px;
+
+
+$font-size-h3: 24px;
+
+
+$font-size-h4: 20px;
+
+
+$font-size-h5: 16px;
+
+
+$font-size-h6: 14px;
+
+
+// line-height
+$line-height-base: 1.42857143;
+
+
+$line-height-computed: $line-height-base;
+
+
+// font-weight
+$font-weight-light: 300;
+
+
+$font-weight-normal: 400;
+
+
+$font-weight-bold: 700;
+
+
+// letter-spacing
+$letter-spacing-base: 0;
+
+
+// line-height-base
+$line-height-base: 1.42857143;
+
+
+// line-height-computed
+$line-height-computed: $line-height-base;
+
+
+
+
+
+// navbar
+$navbar-height: 60px;

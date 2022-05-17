@@ -1,0 +1,113 @@
+// Maintainer: Saikiran Belana <
+// Last updated: Mon, 16 May 2022 
+// Language: scss
+// Path: src/SCSS/styles.scss
+
+@import "variables.scss";
+
+
+// Global Components
+html {
+    scroll-behavior: auto;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+   }
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+// nav imports
+@import "nav.scss";
+
+
+
+
+
+
+
+
+.main-page{
+    width: 100%;
+    height: 100vh;
+    background-color: $dark;
+}
+
+// profile main
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: $dark;
+    padding: 1rem;
+    top: 0;
+
+
+    .profile-image{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        margin: 1rem;
+        border: 10px solid $white;
+    }
+
+    .vertical-line{
+        width: 5px;
+        // height: 100%;
+        height: 25vh;
+        background-color: $white;
+        margin: 1rem;
+    }
+    
+    .main-content-text{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .main-content-text h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .main-content-text h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+
+
+}
+
+
+
+
+
+
+

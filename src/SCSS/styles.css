@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #EDEDED;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  top: 0;
+  z-index: 1;
+}
+.nav-wrapper .brand-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #EDEDED;
+  padding: 0.5rem;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.nav-wrapper .brand-logo:hover {
+  background-color: #EDEDED;
+  color: #212832;
+}
+.nav-wrapper .brand-logo:focus {
+  outline: none;
+}
+.nav-wrapper .brand-logo:active {
+  background-color: #EDEDED;
+  color: #212832;
+}
+.nav-wrapper ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.nav-wrapper ul li {
+  margin-left: 1rem;
+}
+.nav-wrapper ul li a {
+  color: #EDEDED;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.nav-wrapper ul li a:hover {
+  background-color: #EDEDED;
+  color: #212832;
+  padding: 0.5rem;
+  border: 1px solid #212832;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-wrapper {
+    display: none;
+  }
+}
+.main-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #212832;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #212832;
+  padding: 1rem;
+  top: 0;
+}
+.main-content .profile-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 10px solid #EDEDED;
+}
+.main-content .vertical-line {
+  width: 5px;
+  height: 25vh;
+  background-color: #EDEDED;
+  margin: 1rem;
+}
+.main-content .main-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin: 1rem;
+}
+.main-content .main-content-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main-content .main-content-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}/*# sourceMappingURL=styles.css.map */

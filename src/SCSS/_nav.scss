@@ -1,0 +1,87 @@
+@import "./variables";
+
+
+.nav-wrapper{
+    position: fixed ;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    top: 0;
+    z-index: 1;
+
+
+    .brand-logo{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $white ;  
+        padding: 0.5rem;
+        border: 1px solid $white;
+        border-radius: 5px;
+        // padding
+        padding: 0.5rem;
+        // margin
+        margin: 0.5rem;
+    
+        &:hover{
+            background-color: $white;
+            color: $dark;
+        }
+    
+        &:focus{
+            outline: none;
+        }
+    
+        &:active{
+            background-color: $white;
+            color: $dark;
+        }
+    }
+
+    ul{
+        // align elements to the right
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        li{
+            margin-left: 1rem;
+            a{
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: bold;
+                // text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    background-color: $white;
+                    color: $dark;
+                    padding: 0.5rem;
+                    border: 1px solid $dark;
+                    border-radius: 5px;
+            
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+// navbar for small screens
+@media screen and (max-width: 600px){
+    .nav-wrapper{
+        display: none;
+    }
+}
