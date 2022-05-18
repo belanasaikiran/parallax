@@ -94,6 +94,42 @@ li {
   background-color: #212832;
   padding: 1rem;
   top: 0;
+  background-image: url("../images/stars.jpg");
+}
+.main-content .main-content-left {
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes example {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes example {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 .main-content .profile-image {
   width: 20rem;
@@ -107,6 +143,39 @@ li {
   height: 25vh;
   background-color: #EDEDED;
   margin: 1rem;
+  position: relative;
+  -webkit-animation-name: line;
+          animation-name: line;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes line {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes line {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 .main-content .main-content-text {
   display: flex;
@@ -114,6 +183,39 @@ li {
   align-items: left;
   justify-content: center;
   margin: 1rem;
+  position: relative;
+  -webkit-animation-name: main-text;
+          animation-name: main-text;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes main-text {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes main-text {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 .main-content .main-content-text h1 {
   font-size: 2rem;
@@ -123,4 +225,81 @@ li {
   font-size: 1.5rem;
   font-weight: bold;
   padding-top: 1rem;
+}
+
+.projects {
+  scroll-behavior: auto;
+}
+.projects h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #212832;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  top: 0;
+  margin-top: 0;
+}
+.projects .project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-top: 0;
+}
+.projects .project:nth-child(3n+1) {
+  margin-right: 2rem;
+}
+.projects .project .project-card {
+  width: 25%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212832;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  margin: 1rem;
+  padding: 1rem;
+  color: #EDEDED;
+}
+.projects .project .project-card:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+}
+.projects .project .project-card .project-card-img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  background-color: #EDEDED;
+  border: 10px solid #212832;
+}
+.projects .project .project-card .project-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.projects .project .project-card .project-card-title .fab {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.projects .project .project-card .project-card-description {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-top: 1rem;
+}
+.projects .project .project-card .project-card-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.projects .project .project-card .project-card-link:hover {
+  color: #212832;
 }/*# sourceMappingURL=styles.css.map */

@@ -18,6 +18,22 @@ html {
     padding: 0;
     box-sizing: border-box;
     color: $white;
+
+    // &:focus {
+    //     outline: none;
+    // }
+
+
+    // no scroll on body
+    // &:before,
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     height: 0;
+    //     visibility: hidden;
+    // }
+
+
    }
 
 
@@ -38,9 +54,10 @@ li{
 
 
 
+
+
 // nav imports
 @import "nav.scss";
-
 
 
 
@@ -65,6 +82,33 @@ li{
     background-color: $dark;
     padding: 1rem;
     top: 0;
+    background-image: url("../images/stars.jpg");
+
+    .main-content-left{
+        // ANIMATE FROM RIGHT TO LEFT
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+
+
+    @keyframes example {
+        // opacity 0 to 1
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        // 0%   { left:0px; top:0px;}
+      }
+
 
 
     .profile-image{
@@ -73,6 +117,7 @@ li{
         border-radius: 50%;
         margin: 1rem;
         border: 10px solid $white;
+
     }
 
     .vertical-line{
@@ -81,7 +126,36 @@ li{
         height: 25vh;
         background-color: $white;
         margin: 1rem;
+
+        position: relative;
+        animation-name: line;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+
     }
+
+
+    @keyframes line {
+        // grow the line
+        // opacity and height 0 to 1
+        0% {
+            opacity: 0;
+            // go to left and come back
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+
+
+
+       
+      }
+
     
     .main-content-text{
         display: flex;
@@ -89,7 +163,31 @@ li{
         align-items: left;
         justify-content: center;
         margin: 1rem;
+
+        position: relative;
+        animation-name: main-text;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+
     }
+
+    @keyframes main-text {
+    // opacity 0 to 1
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        // 0%   { left:0px; top:0px;}
+      }
+
+
 
     .main-content-text h1{
         font-size: 2rem;
@@ -105,6 +203,9 @@ li{
 
 }
 
+
+
+@import "projects.scss";
 
 
 

@@ -1,0 +1,120 @@
+// Maintainer: Saikiran Belana <
+// Last updated: Mon, 16 May 2022 
+// Language: scss
+// Path: src/SCSS/projects.scss
+
+@import "variables.scss";
+
+.projects {
+    scroll-behavior: auto;
+
+    
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: $dark;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        top: 0;
+        margin-top: 0;
+    }
+
+
+
+
+
+    .project {
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        margin-top: 0;
+        
+
+
+
+        // three projects next to each other
+        &:nth-child(3n + 1) {
+            margin-right: 2rem;
+        }
+
+        .project-card{
+            width: 25%;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $dark;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+            margin: 1rem;
+            padding: 1rem;
+            color: $white;
+
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: #1a1a1a;
+            }
+
+            .project-card-img {
+                width: 30rem;
+                height: 20rem;
+                border-radius: 0.5rem;
+                background-color: $white;
+                border: 10px solid $dark;
+
+
+            }
+
+            .project-card-title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                // color: $white;
+                margin-bottom: 1rem;
+                padding-top: 1rem;
+
+                .fab{
+                    font-size: 1.5rem;
+                    // color: $white;
+                    margin: 1rem;
+        
+                }
+
+            }
+
+            .project-card-description {
+                font-size: 1.2rem;
+                text-align: left;
+                padding-top: 1rem
+
+            }
+
+            .project-card-link {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1rem;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $dark;
+                }
+            }
+        }
+
+
+  
+    }
+
+}
+
+
+
