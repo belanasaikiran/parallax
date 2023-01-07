@@ -8,7 +8,7 @@
         "@fortawesome/free-regular-svg-icons": "^6.1.2",
         "@fortawesome/free-solid-svg-icons": "^6.1.2",
         "@fortawesome/react-fontawesome": "^0.1.18",
-        "@react-spring/parallax": "^9.5.1",
+        "@react-spring/parallax": "^9.6.1",
         "react": "^17.0.0",
         "react-dom": "^17.0.0",
         "react-router-dom": "^5.3.1",
