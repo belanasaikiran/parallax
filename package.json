@@ -14,7 +14,7 @@
         "react-router-dom": "^5.3.1",
         "react-scripts": "5.0.0",
         "react-scroll-parallax": "^3.2.0",
-        "react-spring": "^9.6.0"
+        "react-spring": "^9.7.2"
     },
     "scripts": {
         "start": "react-scripts start",
